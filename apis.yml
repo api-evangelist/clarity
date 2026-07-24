@@ -1,8 +1,25 @@
 aid: clarity
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/clarity.png
 name: Clarity
-description: Clarity is a company surfaced as a portfolio company of 500-global, bessemer-venture-partners,
-  prosus-ventures, version-one-ventures and added to the API Evangelist network as a stub for enrichment.
-  This profile is a lead awaiting the enrichment pipeline.
+description: Clarity (clarity.fm) is an on-demand business advice marketplace that connects
+  entrepreneurs and startup founders with a curated network of vetted experts, advisors, and
+  industry leaders for paid, one-on-one phone consultations booked by the minute. Founded by
+  Dan Martell and now part of the Startups.co family, Clarity lets members search experts by
+  topic, schedule calls, and pay per-minute for coaching on fundraising, marketing, sales,
+  product, and growth. As of this enrichment pass Clarity publishes no public developer API,
+  OpenAPI, SDKs, or developer portal; this profile captures the company's identity and a live
+  domain-security probe of clarity.fm.
 url: https://raw.githubusercontent.com/api-evangelist/clarity/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -15,9 +32,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Marketplace
+- Business Advice
+- Expert Network
+- Consulting
+- Mentorship
+- Startups
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,5 +48,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/clarity-domain-security.yml
 - type: Website
   url: https://clarity.fm
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
